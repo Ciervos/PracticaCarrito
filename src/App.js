@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ProductsProvider } from "./contexts/ProductsContext";
+import Nav from './components/Nav';
+import CartaCont from './components/CartaCont';
+import Carro from './components/Carro';
+
 
 function App() {
+
+  const mockProv={
+    productos:[{
+    name: "1",
+    img: "https://img-global.cpcdn.com/recipes/3280fd0973a007f7/400x400cq70/photo.jpg",
+    price: 100,
+    },
+    {
+    name: "2",
+    img: "http://afuegolento.com.ar/wp-content/uploads/2020/04/alfajor-1-1024x769.jpg",
+    price: 240,
+      },
+    {
+    name: "3",
+    img: "http://afuegolento.com.ar/wp-content/uploads/2016/09/aaa.jpg",
+    price: 117,
+    }],
+    carrito: [],
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ProductsProvider value={mockProv}>
+     <Nav/>
+     <CartaCont/>
+     <Carro/>
+    </ProductsProvider>
   );
 }
 

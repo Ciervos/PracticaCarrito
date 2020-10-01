@@ -1,0 +1,18 @@
+#barranav{
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+
+  h1{
+    color: white;
+    font-size: 16px;
+  }
+  button{
+    background-color: orangered;
+    color: white;
+    height: 25px;
+    margin: 10px;
+  }
+}

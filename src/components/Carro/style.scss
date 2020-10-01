@@ -1,0 +1,13 @@
+.carrorecuadros{
+  display: block;
+  border: 2px solid rebeccapurple;
+}
+
+.carrocont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+}
