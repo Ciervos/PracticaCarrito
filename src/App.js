@@ -40,7 +40,8 @@ function App() {
     <ProductsProvider value={mockProv}>
      <Nav/>
      <CartaCont/>
-    {mostrar && <Carro lista={carro}/>}
+   {/* {mostrar && <Carro vision={mostrar} lista={carro}/>} <-- Linea comentada: Hacer esto reseteaba el useState dentro de carro y rompia la suma de precio total*/}
+    <Carro vision={mostrar} lista={carro}/>
     </ProductsProvider>
   );
 }

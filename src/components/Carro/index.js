@@ -5,7 +5,7 @@ import Product from '../Product'
 import './style.scss'
 
 function Carro(props) {
-  const {lista} = props;
+  const {lista,vision} = props;
   const [valor,setValor] = useState(0);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function Carro(props) {
 
   return( 
   
-  <div className="carrocont"><div className="carrorecuadros"><p>Lista de productos en carrito</p>
+  <div className={vision? "carrocont":"inv"}><div className="carrorecuadros"><p>Lista de productos en carrito</p>
   
   {lista.map((prod, key) => {
           return (
