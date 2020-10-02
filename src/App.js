@@ -3,6 +3,7 @@ import { ProductsProvider } from "./contexts/ProductsContext";
 import Nav from './components/Nav';
 import CartaCont from './components/CartaCont';
 import Carro from './components/Carro';
+import './main.scss';
 
 
 function App() {
