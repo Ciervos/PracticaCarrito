@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{useContext} from 'react';
+import ProductsContext from "../../contexts/ProductsContext";
 import './style.scss'
 
 function Nav() {
+  const data = useContext(ProductsContext);
   return <div id="barranav"><h1>Loguito</h1>
-  <button>Carrito</button>
+  <button onClick={data.handleMostrar}>Carrito</button>
   </div>
 }
 

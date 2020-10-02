@@ -5,7 +5,7 @@ function CartaProductos(props) {
 
 
   return <>
-<img name={name} src={img} onClick={props.cb} height={name=="1"? "400px":"200px"} width={name=="1"? "400px":"200px"}/>
+<img name={name} src={img} onClick={props.cb} height={name=="Alfajor Oreo"? "400px":"200px"} width={name=="Alfajor Oreo"? "400px":"200px"}/>
   </>
 }
 

@@ -1,7 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-function PrecioTotal() {
-  return <p>Precio total:</p>
+function PrecioTotal(props) {
+    const {valor} = props;
+
+return (
+
+<p>Precio total: ${valor}</p>)
 }
 
 export default PrecioTotal;

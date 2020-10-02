@@ -7,8 +7,7 @@ function CartaCont() {
   const data = useContext(ProductsContext);
 
   function handleClick(info){
-    data.carrito.push(info.target.name)
-    console.log(data.carrito)
+   data.carrito(info.target.name)
 
   }
 
