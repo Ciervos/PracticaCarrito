@@ -28,11 +28,11 @@ function App() {
     }],
     carrito: function(info) {
      const producto = mockProv.productos.filter((prod)=>{return(prod.name.includes(info))})
-     setCarro([...carro,producto])  
+     setCarro((prevState)=>[...prevState,producto])  
     
     },
     handleMostrar: function(){
-      setMostrar(!mostrar)
+      setMostrar((prevState)=>!prevState)
       }
   }
   

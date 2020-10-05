@@ -4,9 +4,9 @@ import './style.scss'
 
 function Nav() {
   const data = useContext(ProductsContext);
-  return <div id="barranav"><h1>Loguito</h1>
+  return <nav id="barranav"><h1>Loguito</h1>
   <button onClick={data.handleMostrar}>Carrito</button>
-  </div>
+  </nav>
 }
 
 export default Nav;
